@@ -1,2 +1,2 @@
-# Barcode-Generator
+# Barcode Generator
  A Simple Barcode Generator
