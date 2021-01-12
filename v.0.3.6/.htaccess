@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+RewriteCond %{ENV:REDIRECT_STATUS} =""
+RewriteRule ^barcode_(.*[a-zA-Z0-9]\.png)$ barcode.php [L]
+# RewriteRule /^barcode[a-zA-Z0-9].png$/ barcode.php [L,NC]
+# RewriteRule ^(barcode[a-z0-9]+\.png)$ barcode.php [L,NC]
+# RewriteCond %{REQUEST_URI} !/ai-cache [NC]
+
+</IfModule>
